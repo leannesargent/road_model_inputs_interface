@@ -16,7 +16,7 @@ WORKDIR /app
 # --- Dependencies (cached layer, rebuilt only when requirements change) ---
 COPY requirements.txt ./interface-requirements.txt
 
-ARG LEAP_ROAD_MODEL_REPO=https://github.com/asia-pacific-energy-research-centre/leap_road_model
+ARG LEAP_ROAD_MODEL_REPO=https://github.com/leannesargent/leap_road_model
 # Defaults to the latest leap_road_model main branch. Set LEAP_ROAD_MODEL_REF to
 # a commit SHA or another branch/tag only when a reproducible deployment is needed.
 ARG LEAP_ROAD_MODEL_REF=main
